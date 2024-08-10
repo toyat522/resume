@@ -50,8 +50,8 @@
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
 \geometry{
-	top=0.3in, % Top margin
-	bottom=0.3in, % Bottom margin
+	top=0.4in, % Top margin
+	bottom=0.4in, % Bottom margin
 	left=0.3in, % Left margin
 	right=0.3in, % Right margin
 	%showframe, % Uncomment to show how the type block is set on the page
@@ -119,11 +119,11 @@
 
 % Defines the rSection environment for the major sections within the CV
 \newenvironment{rSection}[1]{ % The single parameter is for the section title
-	\MakeUppercase{\textbf{#1}} % Section title
+    \MakeUppercase{\textbf{#1}} % Section title
 	\medskip % Vertical whitespace
 	\hrule % Horizontal rule
 	\begin{list}{}{ % List to indent the entire content of the section
-		\setlength{\leftmargin}{1.5em} % Indent to the left of the list
+		\setlength{\leftmargin}{1.2em} % Indent to the left of the list
 	}
 	\item[] % Empty list item to enable indentation
 }{
@@ -141,7 +141,7 @@
 		\\ % Job title and location on a new line
 		\textit{#3} \hfill \textit{#4} % Output job title and location
 	}%
-	\smallskip % Vertical whitespace
+	\vspace{0.5em} % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
 }{
