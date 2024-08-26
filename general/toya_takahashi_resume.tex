@@ -1,6 +1,6 @@
 \documentclass[
 	%a4paper,
-	11pt,
+	10pt,
 ]{resume}
 
 \usepackage{ebgaramond}
@@ -31,8 +31,8 @@
 
 	\begin{rSubsection}{NVIDIA}{May 2024 - August 2024}{Systems Software Engineering Intern}{Santa Clara, CA}
     \item Enhanced the performance of an end-to-end robot manipulator object-following workflow by tripling throughput and improving the stability of object pose estimations detected by a deep neural network.
-    \item Programmed a suite of ROS nodes for post-processing a stream of poses through averaging, stability analysis, outlier detection, and Kalman filtering.
-    \item Implemented and tested a CUDA-accelerated ROS node to efficiently perform alpha compositing directly on the GPU, eliminating redundant memory transfers between the CPU and GPU.
+    \item Implemented and wrote unit tests for a suite of ROS nodes for post-processing a stream of poses through averaging, stability analysis, outlier detection, and Kalman filtering.
+    \item Developed and optimized a CUDA-accelerated alpha compositing ROS node, enabling efficient image blending directly on the GPU without redundant CPU-GPU memory transfers.
     \item Calibrated camera intrinsics using ArUco and ChArUco boards to minimize reprojection error for improved 3D scene mapping accuracy.
     \end{rSubsection}
 
@@ -51,6 +51,12 @@
     \item Wrote C++ and Python scripts using data analysis packages such as NumPy and Matplotlib to construct a machine learning dataset of simulated and robot-collected radar images.
 	\end{rSubsection}
 
+	\begin{rSubsection}{MIT Code for Good}{October 2023 - February 2023}{Team Leader}{Cambridge, MA}
+	\item Led a team of 6 to develop a secure web application to collect and visualize client data on behalf of Thrive and Support Advocacy, a nonprofit organization supporting youth and adults with developmental disabilities.
+	\item Engineered user-friendly web interfaces with ReactJS for uploading survey results to the server and visualizing collected data.
+    \item Integrated front-end UI with back-end authentication and data handling systems using MongoDB, ExpressJS, and NodeJS.
+	\end{rSubsection}
+
 	%\begin{rSubsection}{FIRST Robotics Competition}{September 2018 - May 2022}{Team President}{Anchorage, AK}
     %\item Awarded the 2021 FIRST Tech Challenge Dean's List for demonstrating leadership and technical expertise. Recognized among a global pool of over 121,000 participants.
     %\end{rSubsection}
@@ -60,8 +66,8 @@
 \begin{rSection}{Technical Skills}
 
 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		%Computer Languages & Python, C/C++, CUDA, Java, MATLAB, SystemVerilog, RISC-V Assembly \\
-		Computer Languages & Python, C/C++, CUDA, Java, MATLAB, RISC-V Assembly \\
+		%Computer Languages & Python, C/C++, NumPy, CUDA, JavaScript, MATLAB, SystemVerilog, RISC-V Assembly \\
+		Computer Languages & Python, C/C++, NumPy, CUDA, JavaScript, MATLAB, RISC-V Assembly \\
 		Tools & Git, Docker, Linux, Robot Operating System (ROS), Computer-Aided Design (CAD), Simulink
 	\end{tabular}
 

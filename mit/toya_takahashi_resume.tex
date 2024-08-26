@@ -1,0 +1,76 @@
+\documentclass[
+	%a4paper,
+	10pt,
+]{resume}
+
+\usepackage{ebgaramond}
+\usepackage[hidelinks]{hyperref}
+
+\name{Toya Takahashi}
+
+\address{(907)~$\cdot$~538~$\cdot$~1519 \\ \href{mailto:toyat@mit.edu}{\underline{toyat@mit.edu}} \\ \href{https://www.linkedin.com/in/toya-takahashi/}{\underline{linkedin/toya-takahashi}} \\ \href{https://github.com/toyat522}{\underline{github/toyat522}} \\ Cambridge, MA}
+
+\begin{document}
+
+\begin{rSection}{Education}
+
+	\textbf{Massachusetts Institute of Technology (M.I.T.)} \hfill \textit{Expected in May 2026} \\ 
+	B.S. in Electrical Engineering and Computer Science | GPA: 5.0/5.0 \\
+    %Relevant Coursework: Robotics, Autonomous Navigation, Algorithms, Controls, Digital Systems, Electrical Circuits
+    Relevant Coursework: 6.4200 Robotics: Science and Systems, 6.1210 Introduction to Algorithms, 2.14 Analysis and Design of Feedback Control Systems, 6.1910 Computation Structures, 6.2000 Circuits and Electronics
+\end{rSection}
+
+\begin{rSection}{Experience}
+
+	\begin{rSubsection}{MIT Arcturus Robotics}{September 2022 - Present}{Autonomy Software Team Co-Lead}{Cambridge, MA}
+    \item Leading a software team of approximately 20 students in developing an Autonomous Surface Vehicle (ASV) autonomy stack using C++ and Python with Robot Operating System (ROS 2) middleware.
+    \item Developed an algorithm to overlay clustered LiDAR point cloud on the camera frame for matching obstacles with detected objects.
+    \item Implemented an Extended Kalman Filter to fuse GPS and IMU data for global robot localization with centimeter-level accuracy.
+    \item Created a visual navigation algorithm for buoy traversal, integrating the YOLOv5 object detection model with a PID controller.
+    \end{rSubsection}
+
+	\begin{rSubsection}{NVIDIA}{May 2024 - August 2024}{Systems Software Engineering Intern}{Santa Clara, CA}
+    \item Enhanced the performance of an end-to-end robot manipulator object-following workflow by tripling throughput and improving the stability of object pose estimations detected by a deep neural network.
+    \item Implemented and wrote unit tests for a suite of ROS nodes for post-processing a stream of poses through averaging, stability analysis, outlier detection, and Kalman filtering.
+    \item Developed and optimized a CUDA-accelerated alpha compositing ROS node, enabling efficient image blending directly on the GPU without redundant CPU-GPU memory transfers.
+    \item Calibrated camera intrinsics using ArUco and ChArUco boards to minimize reprojection error for improved 3D scene mapping accuracy.
+    \end{rSubsection}
+
+	\begin{rSubsection}{MIT EECS Department}{February 2024 - May 2024}{Lab Assistant, ``Computation Structures"}{Cambridge, MA}
+    \item Assisted undergraduate students with lab assignments for an introductory computer architecture and operating systems course.
+	\end{rSubsection}
+
+	\begin{rSubsection}{MIT Sea Grant College}{January 2023 - May 2024}{Undergraduate Researcher}{Cambridge, MA}
+    \item Modeled an oyster farm simulation environment in the Gazebo robotics simulator to test and validate an ASV autonomy stack.
+    \item Created Unified Robot Description Format (URDF) and Simulation Description Format (SDF) files for ships, oyster baskets, and ocean waves to generate realistic simulation models.
+    \item Designed and built a cross-hull electrical wiring system for integrating microcontrollers, stepper motors, and sensors.
+    \end{rSubsection}
+
+	\begin{rSubsection}{MIT Media Lab: Signal Kinetics}{June 2023 - December 2023}{Undergraduate Researcher}{Cambridge, MA}
+    \item Operated the UR5e robot arm to collect millimeter-wave radar, OptiTrack motion capture, and camera data, contributing to the development of a robot designed to search for and retrieve hidden items.
+    \item Wrote C++ and Python scripts using data analysis packages such as NumPy and Matplotlib to construct a machine learning dataset of simulated and robot-collected radar images.
+	\end{rSubsection}
+
+	\begin{rSubsection}{MIT Code for Good}{October 2023 - February 2023}{Team Leader}{Cambridge, MA}
+	\item Led a team of 6 to develop a secure web application to collect and visualize client data on behalf of Thrive and Support Advocacy, a nonprofit organization supporting youth and adults with developmental disabilities.
+	\item Engineered user-friendly web interfaces with ReactJS for uploading survey results to the server and visualizing collected data.
+    \item Integrated front-end UI with back-end authentication and data handling systems using MongoDB, ExpressJS, and NodeJS.
+	\end{rSubsection}
+
+	%\begin{rSubsection}{FIRST Robotics Competition}{September 2018 - May 2022}{Team President}{Anchorage, AK}
+    %\item Awarded the 2021 FIRST Tech Challenge Dean's List for demonstrating leadership and technical expertise. Recognized among a global pool of over 121,000 participants.
+    %\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Technical Skills}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		%Computer Languages & Python, C/C++, NumPy, CUDA, JavaScript, MATLAB, SystemVerilog, RISC-V Assembly \\
+		Computer Languages & Python, C/C++, NumPy, CUDA, JavaScript, MATLAB, RISC-V Assembly \\
+		Tools & Git, Docker, Linux, Robot Operating System (ROS), Computer-Aided Design (CAD), Simulink
+	\end{tabular}
+
+\end{rSection}
+
+\end{document}
